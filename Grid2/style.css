@@ -2,6 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
+  background-color: #393f4d;
 }
 
 .container {
@@ -9,23 +10,128 @@ html {
     height: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 2fr 2fr 2fr 0.5fr;
-    gap: 15px;
-    padding: 16px;
     
   }
   
 .container > div{
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: 15px;
+   font-weight: bold;
+   
+    
 }
 
 .logo{
     background-color:brown;
     color: white;
-    grid-column: 1 / 6;
-    
+    grid-column: 1 / 2;
+    text-align: center;
+    font-size: 2vw;
+    padding-top: 25px;
+} 
+
+.headerOne{
+  background-color: brown;
+  grid-column: 2/4;
+  padding-top: 30px;
+  padding-left: 75px;
+  font-size: 1.2vw;
+}
+.headerTwo{
+  background-color: brown;
+  padding-top: 30px;
+  font-size: 1.2vw;
+  padding-right: 70px;
+}
+.headerThree{
+  background-color: brown;
+  padding-top: 30px;
+  padding-right: 60px;
+  font-size: 1.2vw;
+}
+.headerFour{
+  background-color: brown;
+  padding-top: 30px;
+  padding-right: 60px;
+  font-size: 1.2vw;
+}
+
+.sidebar{
+  background-color: black;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  grid-row: 2/6;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.article{
+  background-color: black;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  grid-column: 2/4;
+  color: white;
+  padding-top: 10px;
+}
+
+.views{
+  background-color: black;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  grid-column: 4/6;
+  color: white;
+  padding-right: 200px;
+  padding-top: 10px;
+}
+
+.featured{
+  background-color: black;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  grid-column: 6/8;
+  color: white;
+  padding-right: 200px;
+  padding-top: 10px;
+}
+
+.img,
+.box1,
+.box2,
+.box3 {
+  color: white;
+  background-color: aqua;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  
+}
+
+
+.copyright{
+  background-color: #393f4d;
+  grid-column: 1/8;
+  padding-top: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  border-top: 4px solid white;
+  border-bottom: 5px solid white;
+}
+
+.data{
+ 
+  display: grid;
+  grid-row: 3/6;
+  grid-column: 2/7;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.data > div {
+  background-color: white;
+  border-radius: 12px;
+  margin: 12px;
+  font-size: 1vw;
 }
